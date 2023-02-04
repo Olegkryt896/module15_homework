@@ -1,12 +1,6 @@
 // Задание 1 
 
-
 const btn = document.querySelector('.j-btn-test');
-
-const btn2 = document.querySelector('.j-btn-test-screen');
-
-const btnDiv = document.querySelector('.btn_icon')
-
 
 
 let scrollHeight = Math.max(
@@ -25,13 +19,8 @@ let scrollWidth = Math.max(
 
 console.log(scrollWidth)
 
-
-
-
- 
   btn.addEventListener('click', () => {
     alert(`Высота: ${scrollHeight} Ширина: ${scrollWidth}`)
   });
 
- 
 
