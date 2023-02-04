@@ -1,21 +1,12 @@
 const wsUri = "wss://echo-ws-service.herokuapp.com";
-
 const output = document.getElementById("output");
-
 const textOfMessage = document.querySelector('.input')
-
 const divWindow = document.querySelector('.windows')
-
 const btnSend = document.querySelector('.message__btn')
-
 const messageTo = document.querySelector('.messageTo')
-
 const geolocationBtn = document.querySelector('.geolocation_btn')
-
 let messageOfGeolocation = document.createElement('p')
-
 let positionOfGeolocation = document.createElement('a')
-
 let websocket;
 
 let r = false
@@ -49,17 +40,11 @@ const error = () => {
 }
 
 geolocationBtn.addEventListener("click", () => { 
-  
   messageOfGeolocation.classList.add('messageTo')
-
   messageOfGeolocation.innerText = 'Геолокация'
-
   divWindow.appendChild(messageOfGeolocation)
-
   positionOfGeolocation.classList.add('messageOut')
-
   console.log(positionOfGeolocation);
-  
   positionOfGeolocation.textContent = '';
   
   if (!navigator.geolocation) {
